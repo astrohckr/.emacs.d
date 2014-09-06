@@ -16,6 +16,9 @@
 (load "04-highlight-indentation.el")
 (load "05-ag.el")
 (load "06-coffee.el")
+(load "07-markdown.el")
+(load "08-haskell.el")
+(load "09-magit.el")
 
 ;; Themes
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
