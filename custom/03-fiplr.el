@@ -1,3 +1,4 @@
+;; Invoke the fiplr finder
 (global-set-key (kbd "C-x f") 'fiplr-find-file)
 
 ;; Ignore these files
