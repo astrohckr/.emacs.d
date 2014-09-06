@@ -7,10 +7,10 @@
 ;; Do not use tabs for indentation
 (setq-default indent-tabs-mode nil)
 
-;; Display
-;;(set-default-font "Source Code Pro Light-12")
-;;(set-default-font "Fira Mono Sans-14")
+;; Set font
 (set-default-font "InputMono Thin-14")
+
+;; Display Options
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 
@@ -30,11 +30,11 @@
 ;; Disable flyspell
 (flyspell-mode 0)
 
-;; Line numbers
+;; Show line numbers and set format
 (global-linum-mode 1)
-(setq linum-format "%4d ")
+(setq linum-format "%4d   ")
 
-;; Use command key as meta key
+;; Use command key as meta key (really only for GUI-mode)
 ;;(setq mac-option-key-is-meta nil)
 ;;(setq mac-command-key-is-meta t)
 ;;(setq mac-command-modifier 'meta)
