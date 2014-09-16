@@ -7,6 +7,7 @@
 (depends-on "clues-theme")
 (depends-on "coffee-mode")
 (depends-on "enh-ruby-mode")
+(depends-on "exec-path-from-shell")
 (depends-on "fiplr")
 (depends-on "flx-ido")
 (depends-on "haskell-mode")

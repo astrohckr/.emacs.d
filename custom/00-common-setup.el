@@ -11,7 +11,7 @@
 (set-default-font "InputMono Thin-14")
 
 ;; Display Options
-(menu-bar-mode -1)
+;;(menu-bar-mode -1)
 (tool-bar-mode -1)
 
 ;; trucate even even when screen is split into multiple windows
@@ -35,7 +35,11 @@
 (setq linum-format "%4d   ")
 
 ;; Use command key as meta key (really only for GUI-mode)
-;;(setq mac-option-key-is-meta nil)
-;;(setq mac-command-key-is-meta t)
-;;(setq mac-command-modifier 'meta)
-;;(setq mac-option-modifier nil)
+(setq mac-option-key-is-meta nil)
+(setq mac-command-key-is-meta t)
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier nil)
+
+;; Set things to the shell.
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
