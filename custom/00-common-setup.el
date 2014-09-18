@@ -8,7 +8,8 @@
 (setq-default indent-tabs-mode nil)
 
 ;; Set font
-(set-default-font "InputMono Thin-14")
+(add-to-list 'default-frame-alist '(font . "Input Mono Compressed-14"))
+(set-default-font "Input Mono Compressed-14")
 
 ;; Display Options
 ;;(menu-bar-mode -1)
@@ -40,6 +41,13 @@
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier nil)
 
-;; Set things to the shell.
+;; This uses the exec-path-from-shell to make sure that environment
+;; variables are loaded within Emacs.app. 
+;; https://github.com/purcell/exec-path-from-shell
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
+
+;; Initialize font-lock
+(if (fboundp 'global-font-lock-mode)
+    (global-font-lock-mode 1)        ; GNU Emacs
+  (setq font-lock-auto-fontify t))   ; XEmacs
