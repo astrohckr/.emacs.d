@@ -19,9 +19,9 @@
 (load "07-markdown.el")
 (load "08-haskell.el")
 (load "09-magit.el")
-(load "10-auctex.el")
-(load "11-maxima.el")
+;;(load "10-auctex.el")
+;;(load "11-maxima.el")
 
 ;; Themes
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'lawrence t)
+(load-theme 'noctilux t)

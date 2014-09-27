@@ -2,9 +2,6 @@
 
 (depends-on "ag")
 (depends-on "auto-complete")
-(depends-on "cider")
-(depends-on "clojure-mode")
-(depends-on "clues-theme")
 (depends-on "coffee-mode")
 (depends-on "enh-ruby-mode")
 (depends-on "exec-path-from-shell")
@@ -19,7 +16,6 @@
 (depends-on "monochrome-theme")
 (depends-on "noctilux-theme")
 (depends-on "pallet")
-(depends-on "projectile")
 (depends-on "rainbow-identifiers")
 (depends-on "rbenv")
 (depends-on "robe")

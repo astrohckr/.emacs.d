@@ -8,8 +8,8 @@
 (setq-default indent-tabs-mode nil)
 
 ;; Set font
-(add-to-list 'default-frame-alist '(font . "Input Mono Compressed-14"))
-(set-default-font "Input Mono Compressed-14")
+(add-to-list 'default-frame-alist '(font . "Input Mono Compressed-11"))
+(set-default-font "Input Mono Compressed-11")
 
 ;; Display Options
 ;;(menu-bar-mode -1)
