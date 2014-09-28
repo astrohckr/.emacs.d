@@ -8,8 +8,8 @@
 (setq-default indent-tabs-mode nil)
 
 ;; Set font
-(add-to-list 'default-frame-alist '(font . "Input Mono Compressed-11"))
-(set-default-font "Input Mono Compressed-11")
+(add-to-list 'default-frame-alist '(font . "Ubuntu Mono-12"))
+(set-default-font "Ubuntu Mono-12")
 
 ;; Display Options
 ;;(menu-bar-mode -1)
