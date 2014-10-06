@@ -1,6 +1,8 @@
 ;; AucTeX
 (require 'tex-site)
 
+;; You need to install these packages on Ubuntu/Debian:
+;; apt-get install auctex latexmk texlive-fonts-extra texlive-latex-extra
 
 ;; Config
 ;; From http://www.stefanom.org/setting-up-a-nice-auctex-environment-on-mac-os-x/
@@ -26,6 +28,6 @@
 
 ;; use Evince as default pdf viewer
 ;; Evince's displayline is used for forward search (from .tex to .pdf)
-;; option -b highlights the current line; option -g opens Skim in the background  
+;; option -b highlights the current line; option -g opens Evince in the background  
 (setq TeX-view-program-list '(("Evince" "evince --page-index=%(outpage) %o")))
 (setq TeX-view-program-selection '((output-pdf "Evince")))
