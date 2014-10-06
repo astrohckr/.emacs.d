@@ -28,3 +28,4 @@ tramp
 .cask
 auto-save-list/*
 projectile*
+session*
