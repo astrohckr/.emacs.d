@@ -14,9 +14,10 @@
 (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 (setq reftex-plug-into-AUCTeX t)
+(setq-default TeX-master nil) ; Query for master file.
 (setq TeX-PDF-mode t)
 
-;; Use Skim as viewer, enable source <-> PDF sync
+;; Use zathura as viewer, enable source <-> PDF sync
 ;; make latexmk available via C-c C-c
 ;; Note: SyncTeX is setup via ~/.latexmkrc (see below)
 (add-hook 'LaTeX-mode-hook (lambda ()
@@ -26,8 +27,5 @@
     TeX-command-list)))
 (add-hook 'TeX-mode-hook '(lambda () (setq TeX-command-default "latexmk")))
 
-;; use Evince as default pdf viewer
-;; Evince's displayline is used for forward search (from .tex to .pdf)
-;; option -b highlights the current line; option -g opens Evince in the background  
-(setq TeX-view-program-list '(("Evince" "evince --page-index=%(outpage) %o")))
-(setq TeX-view-program-selection '((output-pdf "Evince")))
+(setq TeX-view-program-list '(("zathura" "zathura --fork -s -x emacsclient %o")))
+(setq TeX-view-program-selection '((output-pdf "zathura")))
