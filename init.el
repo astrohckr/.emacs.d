@@ -23,4 +23,12 @@
 
 ;; Themes
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'noctilux t)
+
+;; If using the daemon, load the correct theme in the client
+(if (daemonp)
+    (add-hook 'after-make-frame-functions
+        (lambda (frame)
+            (select-frame frame)
+            (load-theme 'noctilux t)))
+    (load-theme 'noctilux t))
+

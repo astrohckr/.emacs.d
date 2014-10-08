@@ -8,8 +8,8 @@
 (setq-default indent-tabs-mode nil)
 
 ;; Set font
-(add-to-list 'default-frame-alist '(font . "Droid Sans Mono-11"))
-(set-default-font "Droid Sans Mono-11")
+(add-to-list 'default-frame-alist '(font . "Envy Code R-11"))
+(set-default-font "Envy Code R-11")
 
 ;; Display Options
 ;;(menu-bar-mode -1)
@@ -33,7 +33,7 @@
 
 ;; Show line numbers and set format
 (global-linum-mode 1)
-(setq linum-format "%4d   ")
+(setq linum-format "%4d  ")
 
 ;; Use command key as meta key (really only for GUI-mode)
 (setq mac-option-key-is-meta nil)
@@ -51,3 +51,4 @@
 (if (fboundp 'global-font-lock-mode)
     (global-font-lock-mode 1)        ; GNU Emacs
   (setq font-lock-auto-fontify t))   ; XEmacs
+
