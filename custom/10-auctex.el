@@ -27,5 +27,8 @@
     TeX-command-list)))
 (add-hook 'TeX-mode-hook '(lambda () (setq TeX-command-default "latexmk")))
 
-(setq TeX-view-program-list '(("zathura" "zathura --fork -s -x emacsclient %o")))
+;; "zathura -s -x \" emacsclient --no-wait + %% {line} %% {input} \ "% s.pdf
+;; "zathura --synctex-forward %n:0:%b %s.pdf"
+
+(setq TeX-view-program-list '(("zathura" "zathura --fork -s -x emacsclient %o -P %(outpage)")))
 (setq TeX-view-program-selection '((output-pdf "zathura")))
