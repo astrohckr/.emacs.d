@@ -8,8 +8,8 @@
 (setq-default indent-tabs-mode nil)
 
 ;; Set font
-(add-to-list 'default-frame-alist '(font . "Ubuntu Mono-12"))
-(set-default-font "Ubuntu Mono-12")
+(add-to-list 'default-frame-alist '(font . "Droid Sans Mono-11"))
+(set-default-font "Droid Sans Mono-11")
 
 ;; Display Options
 ;;(menu-bar-mode -1)
